@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>店里客 - 首页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Star Gao">
+
+  <!--jQuery UI style-->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+  <!--Flexslider Css-->
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+  <!--Custom Styles-->
+  <link rel="stylesheet/less" type="text/css" href="css/homepage.less">
+</head>
+<body class="page-content-wrap">
+  <!--Top Banner Here-->
+  <div class="top-banner-wrap">
+    <div class="top-banner">
+      <div class="collection-site"><a href="#1">收藏网站</a></div>
+      <div class="user-control-line">
+        <ul class="inline">
+          <li><p>您好，<span class="user-name">用户名</span>，欢迎回到店里客！</p></li>
+            <!--li><a href="#1">[登陆]</a></li>
+            <li><a href="#1">[免费注册]</a></li-->
+              <li><a href="user-center.html">用户中心</a></li>
+              <li class="cutline"><p>&#124;</p></li>
+              <li><a href="#1">客户服务</a></li>
+              <li class="cutline"><p>&#124;</p></li>
+              <li><a href="#1">网站导航</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!--End - Top Banner Here-->
+
+      <!--Logo and Search Here-->
+      <div class="search-bar">
+        <div class="logo">
+          <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+        </div>
+        <div class="search-bar-box">
+          <form class="form-search" id="form-search">
+            <input type="text" class="search-query" id="search-input" />
+            <button type="submit" class="btn" id="search-button"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="clearfix"></div>
+      </div><!--End - Logo and Search Here-->
+
+      <!--Location Bar Here-->
+      <!--div class="location-bar-wrap">
+        <div class="location-bar">
+          <p class="location-info">您需要配送的小区是：<span>国嘉华庭</span><a href="#change-location" class="change-location-btn">更改配送地址</a></p>
+          <span class="history-address">
+            <ul>
+              <li><p>历史地址：</p></li>
+              <li><a href="#">和风楼</a></li>
+              <li><a href="#">宏达大厦</a></li>
+              <li><a href="#">四川大学</a></li>
+              <li><a href="#">香格里拉酒店</a></li>
+            </ul>
+          </span>
+        </div>
+        <div class="input-location-bar">
+          <p class="location-info"><label for="input-location-bar">请输入您需要配送的小区/写字楼：</label><input type="text" placeholder="请输入您需要配送的楼盘或者街道名称" id="delivery-address-name" /><button type="submit" class="btn" id="confirm-location-button">确&nbsp;&nbsp;定</button><span class="notes">我们将根据您的配送位置筛选超市和商品信息</span></p>
+        </div>
+      </div--><!--End - Location Bar Here-->
+
+      <!--Refactor the new location bar, integrate shopping cart section.-->
+      <div class="location-bar-wrap">
+        <div class="location-bar">
+          <div class="location-info"><i class="fa fa-map-marker"></i>国嘉华庭
+            <span>
+              <a href="#change-location" class="change-location-btn"><i class="fa fa-edit"></i> 修改位置</a>
+            </span>
+          </div>
+          <div class="expand-location-wrap">
+            <span class="small-title"><i class="fa fa-location-arrow"></i> 请从列表选择一个地址：</span>
+            <ul class="location-list-wrap">
+              <li><a href="">和风楼<span>锦江区 大慈寺路66号</span></a></li>
+              <li><a href="">大慈寺路社区<span>锦江区 大慈寺路7号</span></a></li>
+              <li><a href="">中央花园<span>武侯区 金雁路288号</span></a></li>
+              <li><a href="">蓝光花满庭<span>武侯区 金牛区洞子口路333号</span></a></li>
+            </ul>
+            <hr/>
+            <span class="small-title"><i class="fa fa-info"></i> 如没有您的位置，你还可以：</span>
+            <a href="#add-new" class="add-new-location-btn">添加新地址</a>
+            <span class="close-layer"><a href="#close-layer"><i class="fa fa-close"></i> 关闭窗口</a></span>
+          </div>
+          <div class="shopping-cart-bar">
+            <i class="fa fa-chevron-down expand-status-icon"></i>
+            <p class="product-number">
+              <i class="fa fa-shopping-cart"></i>
+              <span>10</span>
+            </p>
+            <p class="product-price">
+              <i class="fa fa-tags"></i>
+              <span>￥229.0</span>
+            </p>
+            <!--span class="check-shopping-cart-info"><a href="#check">查看购物车</a></span-->
+          </div>
+          <div class="expand-shopping-cart-wrap">
+            <span class="small-title"><i class="fa fa-shopping-cart"></i> 商品列表（只显示当前配送位置下的购物车）：</span>
+            <ul class="shopping-cart-product-list-wrap">
+              <li>
+                <div class="product-line">
+                  <img src="images/examples/example-product-16-small.jpg" />
+                  <p class="product-name">越南进口利葡面包干<span>300g</span></p>
+                  <p class="product-price"><i class="fa fa-cny"></i>25.6</p>
+                  <div class="change-product-count">
+                    <a href="#des-count"><i class="fa fa-minus-square-o disable"></i></a>
+                    <span>1</span>
+                    <a href="#add-count"><i class="fa fa-plus-square-o"></i></a>
+                  </div>
+                  <a href="#delete-item" class="del-item-btn"><i class="fa fa-trash"></i></a>
+                </div>
+                <div class="del-item-layer">
+                  <p>确定要删除该商品吗？</p>
+                  <a href="#yes" class="del-item-btn"><i class="fa fa-check"></i> 确定</a>
+                  <a href="#no" class="cancel-del-btn"><i class="fa fa-times"></i> 取消</a>
+                </div>
+              </li>
+              <li>
+                <div class="product-line">
+                  <img src="images/examples/example-product-16-small.jpg" />
+                  <p class="product-name">福建特产 友臣 金丝 肉松饼<span>885g</span></p>
+                  <p class="product-price"><i class="fa fa-cny"></i>29.9</p>
+                  <div class="change-product-count">
+                    <a href="#des-count"><i class="fa fa-minus-square-o disable"></i></a>
+                    <span>1</span>
+                    <a href="#add-count"><i class="fa fa-plus-square-o"></i></a>
+                  </div>
+                  <a href="#delete-item" class="del-item-btn"><i class="fa fa-trash"></i></a>
+                </div>
+                <div class="del-item-layer">
+                  <p>确实要删除该商品吗？</p>
+                  <a href="#yes" class="del-item-btn"><i class="fa fa-check"></i> 确定</a>
+                  <a href="#no" class="cancel-del-btn"><i class="fa fa-times"></i> 取消</a>
+                </div>
+              </li>
+              <li>
+                <div class="product-line">
+                  <img src="images/examples/example-product-16-small.jpg" />
+                  <p class="product-name">美国进口 欧思培OceanSpray蔓越莓干<span>1360g</span></p>
+                  <p class="product-price"><i class="fa fa-cny"></i>85.0</p>
+                  <div class="change-product-count">
+                    <a href="#des-count"><i class="fa fa-minus-square-o disable"></i></a>
+                    <span>1</span>
+                    <a href="#add-count"><i class="fa fa-plus-square-o"></i></a>
+                  </div>
+                  <a href="#delete-item" class="del-item-btn"><i class="fa fa-trash"></i></a>
+                </div>
+                <div class="del-item-layer">
+                  <p>确定要删除该商品吗？</p>
+                  <a href="#yes" class="del-item-btn"><i class="fa fa-check"></i> 确定</a>
+                  <a href="#no" class="cancel-del-btn"><i class="fa fa-times"></i> 取消</a>
+                </div>
+              </li>
+            </ul>
+            <hr/>
+            <div class="total-price-line">
+              <span class="small-title"><i class="fa fa-cny"></i> 订单价格：</span>
+              <div class="price-line">
+                商品总价：
+                <span><i class="fa fa-cny"></i>224.0</span>
+              </div>
+              <div class="price-line">
+                配送费用：
+                <span><i class="fa fa-cny"></i>5.0</span>
+              </div>
+              <div class="price-line">
+                订单总价：
+                <span><i class="fa fa-cny"></i>229.0</span>
+              </div>
+            </div>
+            <div class="delivery-info-line">
+              <span class="small-title"><i class="fa fa-truck"></i> 配送信息：</span>
+              <p>Mike Jason<span>13893849485</span></p>
+              <p>国嘉华庭 3单元33楼1号<span>青羊区 锦里东路5号</span></p>
+            </div>
+            <hr>
+            <a href="order-success.html" target="_self" class="settle-accounts-btn">一键购买</a>
+            <span class="close-layer"><a href="#close-layer"><i class="fa fa-close"></i> 关闭窗口</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!--Main Page Content Here-->
+      <div class="main-page-wrap">
+        <!--Main Left Menu Here-->
+        <div class="main-left-menu">
+          <ul class="first-level-menu">
+            <li>
+              <a href="product-category.html">食品饮料</a>
+              <ul class="second-level-menu">
+                <li><span><a href="product-category.html" class="category-link">进口食品</a></span>
+                  <ul class="third-level-menu">
+                    <li><a  href="category-list.html">饼干蛋糕</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">糖果巧克力</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">休闲零食</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">冲调饮品</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">粮油调味</a></li>
+                  </ul>
+                </li>
+                <li><span><a href="#1" class="category-link">地方特产</a></span>
+                  <ul class="third-level-menu">
+                    <li><a href="#1">华北</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">西北</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">西南</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">东北</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">华南</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">华东</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">华中</a></li>
+                  </ul>
+                </li>
+                <li><span><a href="#1" class="category-link">休闲食品</a></span>
+                  <ul class="third-level-menu">
+                    <li><a href="#1">休闲零食</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">坚果炒货</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">肉干肉松</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">蜜饯果脯</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">糖果巧克力</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">饼干蛋糕</a></li>
+                  </ul>
+                </li>
+                <li><span><a href="#1" class="category-link">饮料冲调</a></span>
+                  <ul class="third-level-menu">
+                    <li><a href="#1">饮料</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">牛奶</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">茶叶</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">咖啡/奶茶</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">冲饮谷物</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">水</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#1">厨房用品</a>
+              <ul class="second-level-menu">
+                <li><span><a href="#1" class="category-link">进口食品</a></span>
+                  <ul class="third-level-menu">
+                    <li><a href="#1">饼干蛋糕</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">糖果巧克力</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">休闲零食</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">冲调饮品</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">粮油调味</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#1">个护化妆</a></li>
+            <li><a href="#1">运动健康</a></li>
+            <li><a href="#1">母婴玩具</a></li>
+            <li><a href="#1">办公用品</a></li>
+            <li><a href="#1">家用电器</a></li>
+            <li><a href="#1" class="last-one">服饰鞋帽</a></li>
+          </ul>
+        </div><!--End - Main Left Menu Here-->
+
+        <div class="main-category-block">
+          <div class="big-block-item">
+            <a href="#3" target="_self"><span>食品</span></a>
+          </div>
+          <dl class="main-category-block-item-list">
+            <dd class="small-block-item item-1 blue-item"><a href="#3" target="_self"><span>酒水</span></a></dd>
+            <dd class="small-block-item item-2 blue-item"><a href="#3" target="_self"><span>厨房用品</span></a></dd>
+            <dd class="small-block-item item-3 green-item"><a href="#3" target="_self"><span>饮料</span></a></dd>
+            <dd class="small-block-item item-4 blue-item"><a href="#3" target="_self"><span>洗发护发</span></a></dd>
+            <dd class="small-block-item item-5 blue-item"><a href="#3" target="_self"><span>休闲零食</span></a></dd>
+            <dd class="small-block-item item-6 green-item"><a href="#3" target="_self"><span>洗涤日化</span></a></dd>
+          </dl>
+        </div>
+
+        <!--Ad Part Here - it's demo part, should be replaced by plugin-->
+        <!-- <div class="ad-main-wrap flexslider">
+          <ul class="slides">
+            <li data-thumb="images/examples/ad-example-small-1.jpg">
+              <img src="images/examples/ad-example-1.jpg" />
+            </li>
+            <li data-thumb="images/examples/ad-example-small-2.jpg">
+              <img src="images/examples/ad-example-2.jpg" />
+            </li>
+            <li data-thumb="images/examples/ad-example-small-3.jpg">
+              <img src="images/examples/ad-example-3.jpg" />
+            </li>
+          </ul>
+        </div> --><!--End - Ad Part Here-->
+
+        <!-- <div class="top-right-col-wrap">
+          <div id="post-tabs">
+            <ul class="tabs-wrap">
+              <li class="active"><a href="#post-tabs-1">公告</a></li>
+              <li><a href="#post-tabs-2">规则</a></li>
+            </ul>
+            <div id="post-tabs-1" class="post-content">
+              <ol>
+                <li><a href="#post">消保协议变更2013.5.18</a></li>
+                <li><a href="#post">消保协议变更2013.5.18</a></li>
+                <li><a href="#post">消保协议变更2013.5.18</a></li>
+                <li><a href="#post">消保协议变更2013.5.18</a></li>
+                <li><a href="#post">消保协议变更2013.5.18</a></li>
+              </ol>
+            </div>
+            <div id="post-tabs-2" class="post-content">
+              <ol>
+                <li><a href="#rule">我们的一些规定2013.5.18</a></li>
+                <li><a href="#rule">我们的一些规定2013.5.18</a></li>
+                <li><a href="#rule">我们的一些规定2013.5.18</a></li>
+                <li><a href="#rule">我们的一些规定2013.5.18</a></li>
+                <li><a href="#rule">我们的一些规定2013.5.18</a></li>
+              </ol>
+            </div>
+          </div> --><!--End - Post Part Here-->
+
+          <!-- <div class="user-button-wrap">
+            <button type="button">免费注册</button>
+            <button type="button">用户登陆</button>
+          </div>
+
+          <div class="client-button-wrap">
+            <button type="button">商家入驻</button>
+          </div>
+        </div> -->
+
+        <!-- <div class="goods-info-wrap bargain-price-wrap">
+          <h2 class="category-title">今日特价</h2>
+
+          <ul class="goods-list-style">
+            <li>
+              <a href="goods-details.html">
+                <span class="discount_labels">7.5</span>
+                <img src="images/examples/example-product-22-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price">今日特价：<span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <span class="discount_labels">7.5</span>
+                <img src="images/examples/example-product-23-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price">今日特价：<span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <span class="discount_labels">7.5</span>
+                <img src="images/examples/example-product-24-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price">今日特价：<span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <span class="discount_labels">7.5</span>
+                <img src="images/examples/example-product-25-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price">今日特价：<span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <span class="discount_labels">7.5</span>
+                <img src="images/examples/example-product-26-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price">今日特价：<span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+          </ul>
+        </div> -->
+
+        <div class="fast-buy-wrap">
+          <ul class="fast-buy-list">
+            <li>
+              <div class="fast-buy-product-wrap">
+                <img src="images/examples/example-product-6.jpg" />
+                <div class="product-num"><i class="fa fa-shopping-cart"></i><span>0</span></div>
+                <div class="buy-product-wrap">
+                  <!--span class="change-num-wrap">
+                    <a href="#des-count"><i class="fa fa-minus-square-o"></i></a>
+                    <span>1</span>
+                    <a href="#add-count"><i class="fa fa-plus-square-o"></i></a>
+                  </span-->
+                  <a class="add-shopping-cart-btn" href="#buy"><i class="fa fa-shopping-cart"></i>加入购物车</a>
+                  <a class="remove-shopping-cart-btn" href="#del"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="product-info-wrap">
+                  <p class="product-name">福建特产友臣金丝肉松饼<span>885g</span></p>
+                  <p class="product-price">&yen;29.9</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fast-buy-product-wrap">
+                <img src="images/examples/example-product-6.jpg" />
+                <div class="product-num"><i class="fa fa-shopping-cart"></i><span>0</span></div>
+                <div class="buy-product-wrap">
+                  <a class="add-shopping-cart-btn" href="#buy"><i class="fa fa-shopping-cart"></i>加入购物车</a>
+                  <a class="remove-shopping-cart-btn" href="#del"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="product-info-wrap">
+                  <p class="product-name">福建特产友臣金丝肉松饼<span>885g</span></p>
+                  <p class="product-price">&yen;29.9</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fast-buy-product-wrap">
+                <img src="images/examples/example-product-6.jpg" />
+                <div class="product-num"><i class="fa fa-shopping-cart"></i><span>0</span></div>
+                <div class="buy-product-wrap">
+                  <a class="add-shopping-cart-btn" href="#buy"><i class="fa fa-shopping-cart"></i>加入购物车</a>
+                  <a class="remove-shopping-cart-btn" href="#del"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="product-info-wrap">
+                  <p class="product-name">福建特产友臣金丝肉松饼<span>885g</span></p>
+                  <p class="product-price">&yen;29.9</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fast-buy-product-wrap">
+                <img src="images/examples/example-product-6.jpg" />
+                <div class="product-num"><i class="fa fa-shopping-cart"></i><span>0</span></div>
+                <div class="buy-product-wrap">
+                  <a class="add-shopping-cart-btn" href="#buy"><i class="fa fa-shopping-cart"></i>加入购物车</a>
+                  <a class="remove-shopping-cart-btn" href="#del"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="product-info-wrap">
+                  <p class="product-name">福建特产友臣金丝肉松饼<span>885g</span></p>
+                  <p class="product-price">&yen;29.9</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="fast-buy-product-wrap">
+                <img src="images/examples/example-product-6.jpg" />
+                <div class="product-num"><i class="fa fa-shopping-cart"></i><span>0</span></div>
+                <div class="buy-product-wrap">
+                  <a class="add-shopping-cart-btn" href="#buy"><i class="fa fa-shopping-cart"></i>加入购物车</a>
+                  <a class="remove-shopping-cart-btn" href="#del"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="product-info-wrap">
+                  <p class="product-name">福建特产友臣金丝肉松饼<span>885g</span></p>
+                  <p class="product-price">&yen;29.9</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+
+        <div class="goods-info-wrap category-1">
+          <h2 class="category-title">食品饮料<!-- <span class="more-link"><a href="#more">更多...</a></span> --></h2>
+
+          <ul class="goods-list-style">
+            <li class="sub-category-menu-wrap">
+              <ul class="sub-category-menu">
+                <li><a href="#sub-menu-item">进口食品</a></li>
+                <li><a href="#sub-menu-item">地方特产</a></li>
+                <li><a href="#sub-menu-item">休闲食品</a></li>
+                <li><a href="#sub-menu-item">粮油调味</a></li>
+                <li><a href="#sub-menu-item">酒饮冲调</a></li>
+                <li><a href="#sub-menu-item">营养健康</a></li>
+                <li><a href="#sub-menu-item">生鲜冻品</a></li>
+                <li><a href="#sub-menu-item">中外名酒</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-28-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-29-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-30-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-31-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="goods-info-wrap category-2">
+          <h2 class="category-title">厨房用品</h2>
+
+          <ul class="goods-list-style">
+            <li class="sub-category-menu-wrap">
+              <ul class="sub-category-menu">
+                <li><a href="#sub-menu-item">烹饪锅具</a></li>
+                <li><a href="#sub-menu-item">刀剪案板</a></li>
+                <li><a href="#sub-menu-item">收纳保鲜</a></li>
+                <li><a href="#sub-menu-item">水具酒具</a></li>
+                <li><a href="#sub-menu-item">餐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-16-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-17-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-18-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-19-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="goods-info-wrap category-3">
+          <h2 class="category-title">个护化妆</h2>
+
+          <ul class="goods-list-style">
+            <li class="sub-category-menu-wrap">
+              <ul class="sub-category-menu">
+                <li><a href="#sub-menu-item">面部护理</a></li>
+                <li><a href="#sub-menu-item">身体护理</a></li>
+                <li><a href="#sub-menu-item">口腔护理</a></li>
+                <li><a href="#sub-menu-item">女性护理</a></li>
+                <li><a href="#sub-menu-item">男性护理</a></li>
+                <li><a href="#sub-menu-item">魅力彩妆</a></li>
+                <li><a href="#sub-menu-item">香水SPA</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-20-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-21-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-22-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-23-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="goods-info-wrap category-4">
+          <h2 class="category-title">洗涤日化</h2>
+
+          <ul class="goods-list-style">
+            <li class="sub-category-menu-wrap">
+              <ul class="sub-category-menu">
+                <li><a href="#sub-menu-item">洗浴用品</a></li>
+                <li><a href="#sub-menu-item">洗发用品</a></li>
+                <li><a href="#sub-menu-item">美发护发</a></li>
+                <li><a href="#sub-menu-item">美容化妆</a></li>
+                <li><a href="#sub-menu-item">个人清洁</a></li>
+                <li><a href="#sub-menu-item">婴幼用品</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-20-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-21-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-22-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="goods-details.html">
+                <img src="images/examples/example-product-23-small.jpg" />
+                <p class="goods-desc">洋河蓝色经典海之蓝42度绵柔型 480ml</p>
+              </a>
+              <p class="goods-price"><span>￥125.00</span></p>
+              <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+            </li>
+          </ul>
+        </div>
+      </div><!--End - Main Page Content Here-->
+
+      <div class="clearfix"></div>
+
+      <div id="dont-find-community-name" title="对不起，没有找到您输入的小区。" class="dialog-popup location-error-popup">
+        <div class="btn-wrap"><a href="#close" class="close-link" role="button" aria-disabled="false" title="close">关闭窗口</a></div>
+        <div class="change-error-wrap">
+          <p class="small-title"><span>请您再次检查输入的小区名称，或者</span>添加新的小区信息</p>
+          <input type="text" placeholder="" class="location-name" />
+          <button type="submit" class="btn" id="confirm-location-button">再次搜索</button>
+          <div class="clearfix"></div>
+          <span class="cutline"></span>
+          <!--label for="add-new-community"><input type="checkbox" id="add-new-community" /> 添加新的小区</label-->
+          <a href="#add-new" id="add-new-community"><img src="images/elements/down_arrow.png" />&nbsp;添加新的小区</a>
+        </div>
+        <div class="add-new-community-wrap">
+          <p class="small-title">添加新的小区信息</p>
+          <label for="new-community-name"><span>*</span>小区名称:</label>
+          <input type="text" placeholder="" class="location-name" id="new-community-name" />
+          <label for="new-community-address"><span>*</span>小区地址:</label>
+          <input type="text" placeholder="" class="location-name" id="new-community-address" />
+          <span class="cutline"></span>
+          <p class="notice-text">如果您提交的小区信息准确，我们将有可能为您送上一份礼物。<img src="images/elements/gift.png" /></p>
+          <label for="your-phone-number">您的联系方式:</label>
+          <input type="text" placeholder="" class="location-name" id="your-phone-number" />
+          <button type="submit" class="btn" id="add-new-community-button">提&nbsp;&nbsp;交</button>
+          <a href="#back" class="back-edit-link">&lt; 返回修改</a>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+      <!--Footer Content Here-->
+      <footer>
+        <div class="footer">
+          <div class="footer-content-wrap">
+            <div class="list-wrap">
+              <h3>新手入门</h3>
+              <ul>
+                <li><a href="#1">购物流程</a></li>
+                <li><a href="#1">积分说明</a></li>
+                <li><a href="#1">发票制度</a></li>
+                <li><a href="#1">服务承诺</a></li>
+                <li><a href="#1">服务协议</a></li>
+                <li><a href="#1">手机服务端</a></li>
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <h3>配送方式</h3>
+              <ul>
+                <li><a href="#1">配送范围及时间</a></li>
+                <li><a href="#1">商品验货与签收</a></li>
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <h3>售后服务</h3>
+              <ul>
+                <li><a href="#1">退换货原则</a></li>
+                <li><a href="#1">退款说明</a></li>
+              </ul>
+            </div>
+            <div class="list-wrap">
+              <h3>帮助信息</h3>
+              <ul>
+                <li><a href="#1">帮助信息</a></li>
+                <li><a href="#1">常见问题</a></li>
+                <li><a href="#1">找回密码</a></li>
+                <li><a href="#1">联系客服</a></li>
+                <li><a href="#1">手机访问</a></li>
+              </ul>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        
+        <ul class="page-bottom-links">
+          <li><a href="#1">关于我们</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">联系我们</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">人才招聘</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">友情链接</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">商家入驻</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">广告服务</a></li>
+          <li>&#124;</li>
+          <li><a href="#1">媒体报道</a></li>
+        </ul>
+
+        <p class="copy-info">&copy; Copyright Information 2013</p>
+
+      </footer><!--End - Footer Content Here-->
+
+      <!--Javascript is here-->
+      <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+      <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+      <script type="text/javascript" src="js/less.min.js"></script>
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script type="text/javascript">
+      $(window).load(function(){
+        $('.ad-main-wrap').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+        });
+
+        $( "#dont-find-community-name" ).dialog({
+          autoOpen: false,
+          width: 460,
+          modal: true
+        });
+
+        $('#add-new-community').click(function(){
+          $('.change-error-wrap').hide();
+          $('.add-new-community-wrap').show();
+        });
+
+        $('.back-edit-link').click(function(){
+          $('.change-error-wrap').show();
+          $('.add-new-community-wrap').hide();
+        });
+        
+        $("#confirm-location-button").click(function() {
+          $("#dont-find-community-name").dialog( "open" );
+          $('.location-name').val($('#delivery-address-name').val());
+        });
+
+        $('.close-link').click(function(){  
+          $("#dont-find-community-name").dialog( "close" );
+        })
+      });
+      </script>
+    </body>
+    </html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>确认订单页面</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Star Gao">
+
+        <!--jQuery UI style-->
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+        <!--Custom Styles-->
+        <link rel="stylesheet/less" type="text/css" href="css/shopping-cart.less">
+    </head>
+    <body class="page-content-wrap">
+        <!--Top Banner Here-->
+        <div class="top-banner-wrap">
+            <div class="top-banner">
+                <div class="collection-site"><a href="#1">收藏网站</a></div>
+                <div class="user-control-line">
+                    <ul class="inline">
+                        <li><p>您好，欢迎来到店里客！</p></li>
+                        <li><a href="#1">[登陆]</a></li>
+                        <li><a href="#1">[免费注册]</a></li>
+                        <li class="cutline"><p>&#124;</p></li>
+                        <li><a href="user-center.html">客户服务</a></li>
+                        <li class="cutline"><p>&#124;</p></li>
+                        <li><a href="#1">网站导航</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--End - Top Banner Here-->
+
+        <!--Logo and Search Here-->
+        <div class="search-bar">
+            <div class="logo">
+                <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+            </div>
+            <!--div class="search-bar">
+                <form class="form-search" id="form-search">
+                    <input type="text" class="search-query" id="search-input" />
+                    <button type="submit" class="btn" id="search-button">搜&nbsp;&nbsp;索</button>
+                </form>
+            </div-->
+            <div class="status-bar">
+                <div class="step-1"><span class="step-status actived"></span><p>我的购物车</p></div>
+                <div class="step-2"><span class="step-status"></span><p>核对信息并下单</p></div>
+                <div class="step-3"><span class="step-status unactive"></span><p>完成订单</p></div>
+            </div>
+            <div class="clearfix"></div>
+        </div><!--End - Logo and Search Here-->
+
+        <!--Main Page Content Here-->
+        <div class="main-page-wrap">
+            <div class="goods-info-wrap">
+                <h1 class="category-title">我的订单<span>请仔细核对您的订单信息</span></h1>
+
+                <div class="order-info-line address-info">
+                    <div class="title-wrap">
+                        <h2>收货人信息</h2><a href="#edit" class="edit-delivery-info-btn">[修改]</a>
+                    </div>
+
+                    <div class="address-info-line">
+                        <label for="customer-name">收货人姓名：</label><p>张三</p><input type="text" id="customer-name" class="address-info-input hidden" /><button type="button" class="hidden">确定</button>
+                    </div>
+                    <div class="address-info-line">
+                        <label for="customer-name">配送楼盘：</label><p>成都 武侯区 锦里东路 国嘉华庭</p><input type="text" id="customer-name" class="address-info-input hidden" /><button type="button" class="hidden">确定</button>
+                    </div>
+                    <div class="address-info-line">
+                        <label for="customer-name">具体地址：</label><input type="text" id="customer-name" class="address-info-input" placeholder="请输入您的具体地址：单元号，楼层号，房间号等。" /><button type="button">确定</button>
+                    </div>
+                    <div class="address-info-line">
+                        <label for="customer-name">联系电话：</label><input type="text" id="customer-name" class="address-info-input" placeholder="请输入您的联系电话" /><button type="button">确定</button>
+                    </div>
+                </div>
+
+                <div class="order-info-line products-info">
+                    <div class="title-wrap">
+                        <h2>商品及配送信息</h2><a href="shopping-cart.html">[返回购物车修改]</a>
+                    </div>
+
+                    <div class="delivery-info">
+                        <p><span>配送超市：</span>红旗连锁 <span>- 江城花分场</span></p>
+                        <p>10分钟配送</p>
+                        <p>无配送费</p>
+                        <span class="need-cash-wrap"><input type="checkbox" class="need-cash-btn" /><label>是否找零</label></span>
+                    </div>
+
+                    <div class="goods-info-table-wrap">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="goods-info-table">
+                            <tr>
+                                <th class="goods-info">商品</a><th class="goods-info">单价</a><th class="goods-info">数量</a><th class="goods-info">小计</a>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥21.90</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥21.90</td>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥108.00</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥108.00</td>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥68.00</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥68.00</td>
+                            </tr>
+                        </table>
+
+                        <div class="submit-order-wrap">
+                            <p>本店合计：<span class="price">￥185.00</span></p>
+                            <button type="submit">提交本店订单</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="order-info-line products-info">
+                    <div class="delivery-info">
+                        <p><span>配送超市：</span>红旗连锁 <span>- 江城花分场</span></p>
+                        <p>10分钟配送</p>
+                        <p><span>配送费：</span>5 元</p>
+                        <span class="need-cash-wrap"><input type="checkbox" class="need-cash-btn" /><label>是否找零</label></span>
+                    </div>
+
+                    <div class="goods-info-table-wrap">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="goods-info-table">
+                            <tr>
+                                <th class="goods-info">商品</a><th class="goods-info">单价</a><th class="goods-info">数量</a><th class="goods-info">小计</a>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥21.90</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥21.90</td>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥108.00</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥108.00</td>
+                            </tr>
+                            <tr>
+                                <td class="goods-info"><img src="images/examples/goods-image-small.jpg" /><p>西班牙 GULLON谷优饼干经典组合装800g</p></td>
+                                <td>￥68.00</td>
+                                <td class="buy-number">1</td>
+                                <td class="price">￥68.00</td>
+                            </tr>
+                        </table>
+
+                        <div class="submit-order-wrap">
+                            <p>本店合计：<span class="price">￥185.00</span></p>
+                            <button type="submit">提交本店订单</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="submit-all-order-wrap">
+                    <p class="total-price">应付总额：<span class="price">￥370.00</span></p>
+                    <p class="delivery-address">配送至：<span>成都市 武侯区 锦里东路 国嘉华庭 1单元11楼1号</span></p>
+                    <p class="customer-name">收货人：<span>张三</span></p>
+                </div>
+                <div class="clearfix"></div>
+                <button type="submit" id="submit-all-order-btn">提交所有订单</button>
+            </div>
+        </div><!--End - Main Page Content Here-->
+
+        <div class="clearfix"></div>
+
+        <!--Footer Content Here-->
+        <footer>
+            <div class="footer">
+                <div class="footer-content-wrap">
+                    <div class="list-wrap">
+                        <h3>新手入门</h3>
+                        <ul>
+                            <li><a href="#1">购物流程</a></li>
+                            <li><a href="#1">积分说明</a></li>
+                            <li><a href="#1">发票制度</a></li>
+                            <li><a href="#1">服务承诺</a></li>
+                            <li><a href="#1">服务协议</a></li>
+                            <li><a href="#1">手机服务端</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-wrap">
+                        <h3>配送方式</h3>
+                        <ul>
+                            <li><a href="#1">配送范围及时间</a></li>
+                            <li><a href="#1">商品验货与签收</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-wrap">
+                        <h3>售后服务</h3>
+                        <ul>
+                            <li><a href="#1">退换货原则</a></li>
+                            <li><a href="#1">退款说明</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-wrap">
+                        <h3>帮助信息</h3>
+                        <ul>
+                            <li><a href="#1">帮助信息</a></li>
+                            <li><a href="#1">常见问题</a></li>
+                            <li><a href="#1">找回密码</a></li>
+                            <li><a href="#1">联系客服</a></li>
+                            <li><a href="#1">手机访问</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            
+            <ul class="page-bottom-links">
+                <li><a href="#1">关于我们</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">联系我们</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">人才招聘</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">友情链接</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">商家入驻</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">广告服务</a></li>
+                <li>&#124;</li>
+                <li><a href="#1">媒体报道</a></li>
+            </ul>
+
+            <p class="copy-info">&copy; Copyright Information 2013</p>
+
+        </footer><!--End - Footer Content Here-->
+
+        <!--Javascript is here-->
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/less.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
+</html>

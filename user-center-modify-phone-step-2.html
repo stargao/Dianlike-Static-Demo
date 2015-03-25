@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>用户中心 - 修改安全手机/邮箱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Star Gao">
+
+    <!--jQuery UI style-->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet/less" type="text/css" href="css/user-center.less">
+</head>
+<body class="page-content-wrap">
+    <!--Top Banner Here-->
+    <div class="top-banner-wrap">
+        <div class="top-banner">
+            <div class="collection-site"><a href="#1">收藏网站</a></div>
+            <div class="user-control-line">
+                <ul class="inline">
+                    <li><p>您好，欢迎来到店里客！</p></li>
+                    <li><a href="#1">[登陆]</a></li>
+                    <li><a href="#1">[免费注册]</a></li>
+                    <li class="cutline"><p>&#124;</p></li>
+                    <li><a href="#1">客户服务</a></li>
+                    <li class="cutline"><p>&#124;</p></li>
+                    <li><a href="#1">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--End - Top Banner Here-->
+
+    <!--Logo and Search Here-->
+    <div class="search-bar">
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+        </div>
+        <div class="search-bar">
+            <form class="form-search" id="form-search">
+                <input type="text" class="search-query" id="search-input" />
+                <button type="submit" class="btn" id="search-button">搜&nbsp;&nbsp;索</button>
+            </form>
+        </div>
+        <div class="clearfix"></div>
+    </div><!--End - Logo and Search Here-->
+
+    <!--Location Bar Here-->
+    <div class="location-bar-wrap">
+        <div class="location-bar">
+            <p class="location-info">您需要配送的小区是：<span>国嘉华庭</span><a href="#change-location" class="change-location-btn">更改配送地址</a></p>
+        </div>
+        <div class="input-location-bar">
+            <p class="location-info"><label for="input-location-bar">请输入您需要配送的小区/写字楼：</label><input type="text" placeholder="请输入您所在的楼盘或者街道名称" /><button type="submit" class="btn" id="confirm-location-button">确&nbsp;&nbsp;定</button><span class="notes">我们将根据您的配送位置筛选超市和商品信息</span></p>
+        </div>
+    </div><!--End - Location Bar Here-->
+
+    <!--Main Page Content Here-->
+    <div class="main-page-wrap">
+        <div class="goods-info-wrap">
+            <h1 class="category-title">我的店里客&nbsp;&gt;&nbsp;<span class="breadcrumb">修改安全手机 / 邮箱</span></h1>
+        </div>
+
+        <div class="left-menu-wrap">
+            <div class="left-list-menu" id="user-center-menu">
+                <h3>账户中心</h3>
+                <div>
+                    <ul>
+                        <li><a href="user-center-edit-personal-info.html">修改个人信息</a></li>
+                        <li><a href="user-center-change-password.html">修改密码</a></li>
+                        <li><a href="user-center-manage-address.html">管理配送地址</a></li>
+                        <li class="active-tab"><a href="user-center-modify-phone-step-1.html">修改安全手机/邮箱</a></li>
+                    </ul>
+                </div>
+                <h3>订单中心</h3>
+                <div>
+                    <ul>
+                        <li><a href="user-center-order-list.html">我的订单</a></li>
+                        <li><a href="user-center-my-collect.html">我的收藏</a></li>
+                        <li><a href="user-center-my-coupon.html">我的优惠券</a></li>
+                    </ul>
+                </div>
+                <h3><a href="user-center-msg-center.html">消息中心</a></h3>
+            </div>
+
+            <div class="left-list-menu" id="recommend--to-you">
+                <h3>浏览历史</h3>
+                <ul>
+                    <li>
+                        <a href="#1">
+                            <img src="images/examples/goods-image-small.jpg" />
+                            <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                        </a>
+                        <p class="price">￥89.00</p>
+                    </li>
+                    <li>
+                        <a href="#1">
+                            <img src="images/examples/goods-image-small.jpg" />
+                            <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                        </a>
+                        <p class="price">￥89.00</p>
+                    </li>
+                    <li>
+                        <a href="#1">
+                            <img src="images/examples/goods-image-small.jpg" />
+                            <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                        </a>
+                        <p class="price">￥89.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="user-center-wrap">
+            <h2 class="page-title">修改安全手机 / 邮箱</h2>
+            <div class="modify-info-wrap">
+                <div class="step-nav-wrap">
+                    <p class="step-notice-title">只需两步，即可修改安全手机/邮箱:</p>
+                    <ol class="step-list">
+                        <li class="actived-step"><a href="#1"><span class="step-num">1</span>输入新信息</a></li>
+                        <li class="current-step"><span class="step-num">2</span>填写短信验证码</li>
+                    </ol>
+                </div>
+                <div class="clearfix"></div>
+                <div class="input-filed">
+                    <label for="input-new-info"><span>2</span>请输入短信验证码</label>
+                    <input class="input-box" type="text" id="input-new-info" />
+                    <span class="input-tip">请输入您收到的短信中所包含的验证码，它通常为6个字符.</span>
+                    <span class="error-msg">错误提示</span>
+                    <button type="submit" class="submit-btn">确&nbsp;&nbsp;认</button>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <button type="submit" class="submit-btn resend-btn"><span>23秒</span>以后重发短信</button>
+                    <span class="notice-tip">没有收到验证码？</span>
+                </div>
+            </div>
+            <!--p class="sucess-tip">恭喜您，您已经完成了安全手机/邮箱的修改。赶紧<a href="#1">去逛逛</a>吧！</p-->
+            <div class="clearfix"></div>
+        </div>
+    </div><!--End - Main Page Content Here-->
+
+    <div class="clearfix"></div>
+
+    <!--Footer Content Here-->
+    <footer>
+        <div class="footer">
+            <div class="footer-content-wrap">
+                <div class="list-wrap">
+                    <h3>新手入门</h3>
+                    <ul>
+                        <li><a href="#1">购物流程</a></li>
+                        <li><a href="#1">积分说明</a></li>
+                        <li><a href="#1">发票制度</a></li>
+                        <li><a href="#1">服务承诺</a></li>
+                        <li><a href="#1">服务协议</a></li>
+                        <li><a href="#1">手机服务端</a></li>
+                    </ul>
+                </div>
+                <div class="list-wrap">
+                    <h3>配送方式</h3>
+                    <ul>
+                        <li><a href="#1">配送范围及时间</a></li>
+                        <li><a href="#1">商品验货与签收</a></li>
+                    </ul>
+                </div>
+                <div class="list-wrap">
+                    <h3>售后服务</h3>
+                    <ul>
+                        <li><a href="#1">退换货原则</a></li>
+                        <li><a href="#1">退款说明</a></li>
+                    </ul>
+                </div>
+                <div class="list-wrap">
+                    <h3>帮助信息</h3>
+                    <ul>
+                        <li><a href="#1">帮助信息</a></li>
+                        <li><a href="#1">常见问题</a></li>
+                        <li><a href="#1">找回密码</a></li>
+                        <li><a href="#1">联系客服</a></li>
+                        <li><a href="#1">手机访问</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        
+        <ul class="page-bottom-links">
+            <li><a href="#1">关于我们</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">联系我们</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">人才招聘</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">友情链接</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">商家入驻</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">广告服务</a></li>
+            <li>&#124;</li>
+            <li><a href="#1">媒体报道</a></li>
+        </ul>
+
+        <p class="copy-info">&copy; Copyright Information 2013</p>
+
+    </footer><!--End - Footer Content Here-->
+
+    <!--Javascript is here-->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

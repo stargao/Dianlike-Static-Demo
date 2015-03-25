@@ -1,0 +1,70 @@
+@import url('common.less');
+
+.search-filter-wrap {
+  border: 1px solid @gray-border;
+  margin-left: 15px;
+  margin-top: 23px;
+
+  h3 {
+    background: @gray-color;
+    border-bottom: 1px solid @gray-border;
+        height: 28px;
+        line-height: 28px;
+      padding-left: 8px;
+      font-size: 14px;
+      font-weight: normal;
+  }
+
+  .filter-item-wrap {
+    padding-top: 10px;
+    border-top: 1px dotted @gray-border;
+  }
+
+  .filter-item-wrap:first-child {
+    border: none;
+  }
+
+  h4 {
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      float: left;
+      list-style: none;
+      margin-right: 8px;
+      margin-bottom: 5px;
+
+      a {
+        padding: 3px 5px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background: @blue-color;
+        color: white;
+      }
+    }
+
+    li.select-all {
+      a {
+        background: @blue-color;
+        color: white;
+      }
+    }
+  }
+}
+
+.shopping-cart-wrap {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  border: 1px solid #eee;
+  padding: 5px 10px;
+  margin-left: 520px;
+  background: #fff;
+}

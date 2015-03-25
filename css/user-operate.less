@@ -1,0 +1,105 @@
+@import url('common.less');
+
+@border-color: #cecece;
+
+/*----------------Modified Phone / Email Page Style----------------*/
+.user-operate-wrap {
+	margin-left: 120px;
+	margin-top: 30px;
+	min-height: 360px;
+
+	.sub-category-title {
+		font-size: 14px;
+		font-weight: bold;
+		border-bottom: 1px solid @gray-font;
+		width: 70%;
+		padding: 8px 0;
+		margin-bottom: 10px;
+	}
+
+	.control-group {
+		height: 36px;
+		line-height: 36px;
+		vertical-align: middle;
+		margin-bottom: 20px;
+
+		label {
+			width: 150px;
+			text-align: right;
+			float: left;
+			margin-right: 20px;
+			font-size: 14px;
+
+			span {
+				color: red;
+			}
+		}
+
+		label.checkbox-inline {
+			width: auto;
+		}
+
+		input.input-box {
+			float: left;
+			height: 36px;
+			width: 320px;
+			color: @font-color;
+			border: 1px solid @border-color;
+			padding: 0 10px;
+			margin-right: 15px;
+		}
+	}
+
+	.submit-btn {
+		.blue-button-style(120px, 30px, 13px);
+		margin-left: 170px;
+		display: block;
+		float: left;
+	}
+
+	.resend-btn {
+		.blue-border-button-style(120px, 30px, 12px);
+		margin-left: 20px;
+		display: block;
+		float: left;
+	}
+
+	.login-link {
+		float: left;
+		margin-left: 20px;
+		line-height: 30px;
+	}
+
+	.help-links {
+		list-style: none;
+		display: block;
+		margin-left: 170px;
+		margin-top: 30px;
+
+		li {
+			display: inline-block;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+}
+
+.sucess-tip {
+	margin-left: 80px;
+	margin-top: 120px;
+	font-size: 14px;
+
+	a {
+		font-size: 14px;
+		font-weight: bold;
+		padding: 0 2px;
+	}
+}
+
+.error-msg {
+	font-size: 12px;
+	color: red;
+	display: block;
+	float: left;
+	margin-left: 6px;
+}

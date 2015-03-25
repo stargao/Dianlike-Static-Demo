@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>商品分类页面</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Star Gao">
+
+  <!--jQuery UI style-->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+  <!--Flexslider Css-->
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+  <!--Custom Styles-->
+  <link rel="stylesheet/less" type="text/css" href="css/product-category.less">
+</head>
+<body class="page-content-wrap">
+  <!--Top Banner Here-->
+  <div class="top-banner-wrap">
+    <div class="top-banner">
+      <div class="collection-site"><a href="#1">收藏网站</a></div>
+      <div class="user-control-line">
+        <ul class="inline">
+          <li><p>您好，欢迎来到店里客！</p></li>
+          <li><a href="#1">[登陆]</a></li>
+          <li><a href="#1">[免费注册]</a></li>
+          <li class="cutline"><p>&#124;</p></li>
+          <li><a href="user-center.html">客户服务</a></li>
+          <li class="cutline"><p>&#124;</p></li>
+          <li><a href="#1">网站导航</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--End - Top Banner Here-->
+
+  <!--Logo and Search Here-->
+  <div class="search-bar">
+    <div class="logo">
+      <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+    </div>
+    <div class="search-bar">
+      <form class="form-search" id="form-search">
+        <input type="text" class="search-query" id="search-input" />
+        <button type="submit" class="btn" id="search-button">搜&nbsp;&nbsp;索</button>
+      </form>
+    </div>
+    <div class="clearfix"></div>
+  </div><!--End - Logo and Search Here-->
+
+  <!--Location Bar Here-->
+  <div class="location-bar-wrap">
+    <div class="location-bar">
+      <p class="location-info">您需要配送的小区是：<span>国嘉华庭</span><a href="#change-location" class="change-location-btn">更改配送地址</a></p>
+    </div>
+    <div class="input-location-bar">
+      <p class="location-info"><label for="input-location-bar">请输入您需要配送的小区/写字楼：</label><input type="text" placeholder="请输入您所在的楼盘或者街道名称" /><button type="submit" class="btn" id="confirm-location-button">确&nbsp;&nbsp;定</button><span class="notes">我们将根据您的配送位置筛选超市和商品信息</span></p>
+    </div>
+  </div><!--End - Location Bar Here-->
+
+  <!--Main Page Content Here-->
+  <div class="main-page-wrap">
+    <div class="goods-info-wrap">
+      <h1 class="category-title">食品饮料 &gt;<span class="breadcrumb"><a href="#1">进口食品</a></span></h1>
+
+      <div class="left-menu-wrap">
+        <div class="categories-menu">
+          <a href="#1" class="categories-main-btn">其他分类</a>
+          <ul>
+                <li><a href="#1">食品饮料</a></li>
+                <li><a href="#1">厨房用品</a></li>
+                <li><a href="#1">个护化妆</a></li>
+                <li><a href="#1">运动健康</a></li>
+                <li><a href="#1">母婴玩具</a></li>
+                <li><a href="#1">办公用品</a></li>
+                <li><a href="#1">家用电器</a></li>
+                <li><a href="#1">服饰鞋帽</a></li>
+              </ul>
+        </div>
+        <h2 class="category-title">食品饮料</h2>
+        <div class="left-list-menu product-category-menu" id="product-category-menu">
+          <h3>进口食品</h3>
+          <div>
+            <ul>
+              <li><a href="category-list.html">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>地方特产</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>休闲食品</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>粮油调味</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>中外名酒</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>饮料冲调</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>营养健康</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+          <h3>生鲜食品</h3>
+          <div>
+            <ul>
+              <li><a href="#1">饼干蛋糕</a></li>
+              <li><a href="#1">糖果巧克力</a></li>
+              <li><a href="#1">休闲零食</a></li>
+              <li><a href="#1">冲调饮品</a></li>
+              <li><a href="#1">粮油调味</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Ad Part Here - it's demo part, should be replaced by plugin-->
+      <div class="right-content-wrap">
+        <div class="category-ad-wrap flexslider">
+          <ul class="slides">
+            <li data-thumb="images/examples/small-ad-1.jpg">
+              <img src="images/examples/big-ad-2.jpg" />
+            </li>
+            <li data-thumb="images/examples/small-ad-2.jpg"><!--Thumb image size is 200px*80px-->
+              <img src="images/examples/big-ad-2.jpg" /><!--Ad image size is 620px & 273px-->
+            </li>
+            <li data-thumb="images/examples/small-ad-3.jpg">
+              <img src="images/examples/big-ad-2.jpg" />
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div><!--End - Ad Part Here-->
+
+        <div class="right-top-list-menu">
+          <h3>热销商品销售Top3</h3>
+          <ol>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" alt="商品信息" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干908g盒</p>
+              </a>
+              <p class="price">￥88.00</p>
+              <a class="shop-name" href="shop-page-home.html">红旗超市<span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" alt="商品信息" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干908g盒</p>
+              </a>
+              <p class="price">￥88.00</p>
+              <a class="shop-name" href="shop-page-home.html">红旗超市<span>丽舍滨江分场</a>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" alt="商品信息" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干908g盒</p>
+              </a>
+              <p class="price">￥88.00</p>
+              <a class="shop-name" href="shop-page-home.html">红旗超市<span>丽舍滨江分场</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="goods-info-wrap preferential-info">
+      <h2 class="category-title">身边的优惠</h2>
+
+      <div class="preferential-info-list flexslider">
+        <ul class="slides">
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+          <li>
+            <a href="#1"><img class="first-child" src="images/examples/ad-list.jpg" alt="优惠信息" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="goods-info-wrap">
+      <h2 class="category-title">食品饮料<span class="more-link"><a href="#more">更多...</a></span></h2>
+
+      <ul class="product-category-list">
+        <!-- <li>
+        <img src="images/examples/example-image-each-category.jpg" />
+        </li> -->
+        <li class="product-info">
+          <a href="#good-info">
+            <img src="images/examples/goods-image-big.jpg" />
+            <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+          </a>
+          <p class="goods-price">￥125.00</p>
+          <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+        </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                    <!-- <li class="this-category-top-list">
+                        <h3>蛋糕饼干销售排行榜</h3>
+                        <ol>
+                            <li>
+                                <span>1</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                        </ol>
+                      </li> -->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="goods-info-wrap">
+                    <h2 class="category-title">食品饮料<span class="more-link"><a href="#more">更多...</a></span></h2>
+
+                    <ul class="product-category-list">
+                    <!-- <li>
+                        <img src="images/examples/example-image-each-category.jpg" />
+                      </li> -->
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                    <!-- <li class="this-category-top-list">
+                        <h3>蛋糕饼干销售排行榜</h3>
+                        <ol>
+                            <li>
+                                <span>1</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                        </ol>
+                      </li> -->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="goods-info-wrap">
+                    <h2 class="category-title">食品饮料<span class="more-link"><a href="#more">更多...</a></span></h2>
+
+                    <ul class="product-category-list">
+                    <!-- <li>
+                        <img src="images/examples/example-image-each-category.jpg" />
+                      </li> -->
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                    <!-- <li class="this-category-top-list">
+                        <h3>蛋糕饼干销售排行榜</h3>
+                        <ol>
+                            <li>
+                                <span>1</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                        </ol>
+                      </li> -->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="goods-info-wrap">
+                    <h2 class="category-title">食品饮料<span class="more-link"><a href="#more">更多...</a></span></h2>
+
+                    <ul class="product-category-list">
+                    <!-- <li>
+                        <img src="images/examples/example-image-each-category.jpg" />
+                      </li> -->
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                      <li class="product-info">
+                        <a href="#good-info">
+                          <img src="images/examples/goods-image-big.jpg" />
+                          <p class="goods-desc">丹麦蓝罐曲奇908g</p>
+                        </a>
+                        <p class="goods-price">￥125.00</p>
+                        <a class="shop-info" href="shop-page-home.html"><span>红旗超市</span>丽舍滨江分场</a>
+                      </li>
+                    <!-- <li class="this-category-top-list">
+                        <h3>蛋糕饼干销售排行榜</h3>
+                        <ol>
+                            <li>
+                                <span>1</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <a href="#1">
+                                    <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+                                </a>
+                                <p class="price">￥89.00</p>
+                            </li>
+                        </ol>
+                      </li> -->
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                </div><!--End - Main Page Content Here-->
+
+                <div class="clearfix"></div>
+
+                <!--Footer Content Here-->
+                <footer>
+                  <div class="footer">
+                    <div class="footer-content-wrap">
+                      <div class="list-wrap">
+                        <h3>新手入门</h3>
+                        <ul>
+                          <li><a href="#1">购物流程</a></li>
+                          <li><a href="#1">积分说明</a></li>
+                          <li><a href="#1">发票制度</a></li>
+                          <li><a href="#1">服务承诺</a></li>
+                          <li><a href="#1">服务协议</a></li>
+                          <li><a href="#1">手机服务端</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-wrap">
+                        <h3>配送方式</h3>
+                        <ul>
+                          <li><a href="#1">配送范围及时间</a></li>
+                          <li><a href="#1">商品验货与签收</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-wrap">
+                        <h3>售后服务</h3>
+                        <ul>
+                          <li><a href="#1">退换货原则</a></li>
+                          <li><a href="#1">退款说明</a></li>
+                        </ul>
+                      </div>
+                      <div class="list-wrap">
+                        <h3>帮助信息</h3>
+                        <ul>
+                          <li><a href="#1">帮助信息</a></li>
+                          <li><a href="#1">常见问题</a></li>
+                          <li><a href="#1">找回密码</a></li>
+                          <li><a href="#1">联系客服</a></li>
+                          <li><a href="#1">手机访问</a></li>
+                        </ul>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+
+                  <ul class="page-bottom-links">
+                    <li><a href="#1">关于我们</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">联系我们</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">人才招聘</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">友情链接</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">商家入驻</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">广告服务</a></li>
+                    <li>&#124;</li>
+                    <li><a href="#1">媒体报道</a></li>
+                  </ul>
+
+                  <p class="copy-info">&copy; Copyright Information 2013</p>
+
+                </footer><!--End - Footer Content Here-->
+
+                <!--Javascript is here-->
+                <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+                <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+                <script type="text/javascript" src="js/less.min.js"></script>
+                <script type="text/javascript" src="js/custom.js"></script>
+                <script type="text/javascript">
+                $(window).load(function(){
+                  $('.category-ad-wrap').flexslider({
+                    animation: "slide",
+                    controlNav: "thumbnails"
+                  });
+
+                  $('.preferential-info-list').flexslider({
+                    animation: "slide",
+                    animationLoop: true,
+                    itemWidth: 240,
+                    itemMargin: 13
+                  });
+                });
+                </script>
+              </body>
+              </html>

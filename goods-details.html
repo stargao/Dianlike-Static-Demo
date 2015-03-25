@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>商品信息页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Star Gao">
+
+    <!--jQuery UI style-->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+    <!--Flexslider Css-->
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet/less" type="text/css" href="css/common.less">
+    <link rel="stylesheet/less" type="text/css" href="css/goods-details.less">
+  </head>
+  <body class="page-content-wrap">
+    <!--Top Banner Here-->
+    <div class="top-banner-wrap">
+      <div class="top-banner">
+        <div class="collection-site"><a href="#1">收藏网站</a></div>
+        <div class="user-control-line">
+          <ul class="inline">
+            <li><p>您好，欢迎来到店里客！</p></li>
+            <li><a href="#1">[登陆]</a></li>
+            <li><a href="#1">[免费注册]</a></li>
+            <li class="cutline"><p>&#124;</p></li>
+            <li><a href="user-center.html">客户服务</a></li>
+            <li class="cutline"><p>&#124;</p></li>
+            <li><a href="#1">网站导航</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!--End - Top Banner Here-->
+
+    <!--Logo and Search Here-->
+    <div class="search-bar">
+      <div class="logo">
+        <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+      </div>
+      <div class="search-bar">
+        <form class="form-search" id="form-search">
+          <input type="text" class="search-query" id="search-input" />
+          <button type="submit" class="btn" id="search-button">搜&nbsp;&nbsp;索</button>
+        </form>
+      </div>
+      <div class="clearfix"></div>
+    </div><!--End - Logo and Search Here-->
+
+    <!--Location Bar Here-->
+    <div class="location-bar-wrap">
+      <div class="location-bar">
+        <p class="location-info">您需要配送的小区是：<span>国嘉华庭</span><a href="#change-location" class="change-location-btn">更改配送地址</a></p>
+      </div>
+      <div class="input-location-bar">
+        <p class="location-info"><label for="input-location-bar">请输入您需要配送的小区/写字楼：</label><input type="text" placeholder="请输入您所在的楼盘或者街道名称" /><button type="submit" class="btn" id="confirm-location-button">确&nbsp;&nbsp;定</button><span class="notes">我们将根据您的配送位置筛选超市和商品信息</span></p>
+      </div>
+    </div><!--End - Location Bar Here-->
+
+    <!--Main Page Content Here-->
+    <div class="main-page-wrap">
+      <div class="goods-info-wrap">
+        <h1 class="category-title">食品饮料 &gt;<span class="breadcrumb"><a href="product-category.html">进口食品</a>&nbsp;&gt;&nbsp;<a href="category-list.html">饼干蛋糕</a>&nbsp;&gt;&nbsp;<a href="#1">丹麦蓝罐</a>&nbsp;&gt;&nbsp;丹麦蓝罐曲奇</span></h1>
+
+        <div class="goods-showcase-wrap">
+          <div class="goods-image-wrap flexslider">
+            <ul class="slides">
+              <li data-thumb="images/examples/goods-image-big.jpg">
+                <img src="images/examples/goods-image-big.jpg" />
+              </li>
+              <li data-thumb="images/examples/goods-image-big.jpg"><!--Thumb image size is 75px*75px-->
+                <img src="images/examples/goods-image-big.jpg" /><!--Ad image size is 275px & 275px-->
+              </li>
+              <li data-thumb="images/examples/goods-image-big.jpg">
+                <img src="images/examples/goods-image-big.jpg" />
+              </li>
+              <li data-thumb="images/examples/goods-image-big.jpg">
+                <img src="images/examples/goods-image-big.jpg" />
+              </li>
+            </ul>
+          </div>
+
+          <div class="goods-desc-wrap">
+            <h1 class="goods-title">Kjeldsens丹麦蓝罐曲奇908g</h1>
+            <span class="return-shop-home">
+              <a href="shop-page-home.html">访问超市首页</a>
+              <ul class="shop-page-categroy">
+                <li><a href="shop-page-category.html">食品饮料</a></li>
+                <li><a href="shop-page-category.html">厨房用品</a></li>
+                <li><a href="shop-page-category.html">个护化妆</a></li>
+                <li><a href="shop-page-category.html">运动健康</a></li>
+                <li><a href="shop-page-category.html">母婴玩具</a></li>
+                <li><a href="shop-page-category.html">办公用品</a></li>
+                <li><a href="shop-page-category.html">家用电器</a></li>
+                <li><a href="shop-page-category.html">服饰鞋帽</a></li>
+              </ul>
+            </span>
+
+            <div class="price-delivery-wrap">
+              <p class="price">价&nbsp;&nbsp;&nbsp;&nbsp;格: <span>￥98.00</span></p>
+              <p class="preferential">优惠信息: <span>已优惠￥27.00</span></p>
+              <p class="delivery">配送信息: <span>10分钟配送</span></p>
+            </div>
+
+            <div class="supermarket-info">
+              <img src="images/elements/hongqi-logo.jpg" class="supermarker-logo" alt="红旗连锁" />
+              <p class="supermarket-name">配送超市：<span><a href="shop-page-home.html">红旗连锁一江城花分场</a></span></p>
+              <p class="supermarket-vote">超市评分：<span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /> 4.3分 <a href="#1">（2020份评价）</a></span></p>
+              <p class="delivery-number">配送电话：<span>130-0000-0000</span></p>
+            </div>
+          </div>
+
+          <div class="buy-wrap">
+            <div class="buy-number-wrap">
+              <label for="input-number-box">购买数量：</label>
+              <a href="#1" class="change-number-btn">-</a><input type="text" id="input-number-box" value="1" /><a href="#1" class="change-number-btn">+</a>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="buy-btn-wrap">
+              <a href="#shopping-cart.html" id="shopping-cart-btn" class="add-shopping-cart-btn">加入购物车</a>
+              <a herf="#add-favorite-btn" class="add-favorite-btn">加入收藏</a>
+              <a herf="#add-favorite-btn" class="added-btn">已收藏</a>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="left-menu-wrap">
+        <div class="left-list-menu" id="similar-product">
+          <h3>相关产品</h3>
+          <ul>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="left-list-menu" id="recommend--to-you">
+          <h3>向您推荐</h3>
+          <ul>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <a href="#1">
+                <img src="images/examples/goods-image-small.jpg" />
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="left-list-menu top-list" id="this-week-top">
+          <h3>本周销量排行</h3>
+          <ol>
+            <li>
+              <span>1</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <span>2</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <span>3</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+              <p class="price">￥89.00</p>
+            </li>
+            <li>
+              <span>4</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+            </li>
+            <li>
+              <span>5</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+            </li>
+            <li>
+              <span>6</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+            </li>
+            <li>
+              <span>7</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+            </li>
+            <li>
+              <span>8</span>
+              <a href="#1">
+                <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="goods-info-wrap">
+        <div class="goods-desc-content-wrap">
+          <h2 class="goods-desc-title">产品信息 Porduct Information</h2>
+          <img src="images/examples/goods-image-big.jpg" />
+          <p>Kjeldsens丹麦蓝罐曲奇<br/>卫生许可证号：NO.Y.05-1<br/>公司也已通过ISO9002和HACCP认证<br/>配料：面粉、牛油、白砂糖、椰蓉、加仑子、食盐、膨松剂（碳酸氢胺）、香草<br/>净含量：908g<br/>适合人群：所有人群<br/>食用方法：开装即食<br/>保质期：18个月<br/>保存方法：阴凉干燥处保存</p>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="goods-desc-content-wrap">
+          <h2 class="goods-desc-title">产品信息 Porduct Information</h2>
+          <img src="images/examples/goods-image-big.jpg" />
+          <p>Kjeldsens丹麦蓝罐曲奇<br/>卫生许可证号：NO.Y.05-1<br/>公司也已通过ISO9002和HACCP认证<br/>配料：面粉、牛油、白砂糖、椰蓉、加仑子、食盐、膨松剂（碳酸氢胺）、香草<br/>净含量：908g<br/>适合人群：所有人群<br/>食用方法：开装即食<br/>保质期：18个月<br/>保存方法：阴凉干燥处保存</p>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="comment-wrap">
+        <h2>超市评价<span>(2020份评价)</span></h2>
+        <div class="comment-content-wrap">
+          <div class="user-avatar">
+            <a href="#1">
+              <div class="avatar-img-wrap">
+                <img src="images/elements/default-avatar.jpg" />
+              </div>
+              <p>用户名字</p>
+            </a>
+          </div>
+
+          <div class="user-comment">
+            <span class="comment-arrow"><img src="images/elements/comment-arrow.png" /></span>
+            <div class="user-vote-wrap">
+              <img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><span class="data">2013-05-14</span>
+            </div>
+            <p>还行吧，送货速度还不错，货品也还可以。</p>
+            <div class="flower-egg">
+              <a href="#flower"><img src="images/elements/flower.png" alt="鲜花" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[13]</span></a>
+              <a href="#egg"><img src="images/elements/egg.png" alt="鸡蛋" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[2]</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-content-wrap">
+          <div class="user-avatar">
+            <a href="#1">
+              <div class="avatar-img-wrap">
+                <img src="images/elements/default-avatar.jpg" />
+              </div>
+              <p>用户名字</p>
+            </a>
+          </div>
+
+          <div class="user-comment">
+            <span class="comment-arrow"><img src="images/elements/comment-arrow.png" /></span>
+            <div class="user-vote-wrap">
+              <img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><span class="data">2013-05-14</span>
+            </div>
+            <p>还行吧，送货速度还不错，货品也还可以。</p>
+            <div class="flower-egg">
+              <a href="#flower"><img src="images/elements/flower.png" alt="鲜花" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[13]</span></a>
+              <a href="#egg"><img src="images/elements/egg.png" alt="鸡蛋" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[2]</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-content-wrap">
+          <div class="user-avatar">
+            <a href="#1">
+              <div class="avatar-img-wrap">
+                <img src="images/elements/default-avatar.jpg" />
+              </div>
+              <p>用户名字</p>
+            </a>
+          </div>
+
+          <div class="user-comment">
+            <span class="comment-arrow"><img src="images/elements/comment-arrow.png" /></span>
+            <div class="user-vote-wrap">
+              <img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><span class="data">2013-05-14</span>
+            </div>
+            <p>还行吧，送货速度还不错，货品也还可以。</p>
+            <div class="flower-egg">
+              <a href="#flower"><img src="images/elements/flower.png" alt="鲜花" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[13]</span></a>
+              <a href="#egg"><img src="images/elements/egg.png" alt="鸡蛋" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[2]</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment-content-wrap">
+          <div class="user-avatar">
+            <a href="#1">
+              <div class="avatar-img-wrap">
+                <img src="images/elements/default-avatar.jpg" />
+              </div>
+              <p>用户名字</p>
+            </a>
+          </div>
+
+          <div class="user-comment">
+            <span class="comment-arrow"><img src="images/elements/comment-arrow.png" /></span>
+            <div class="user-vote-wrap">
+              <img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><span class="data">2013-05-14</span>
+            </div>
+            <p>还行吧，送货速度还不错，货品也还可以。</p>
+            <div class="flower-egg">
+              <a href="#flower"><img src="images/elements/flower.png" alt="鲜花" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[13]</span></a>
+              <a href="#egg"><img src="images/elements/egg.png" alt="鸡蛋" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[2]</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="comment-content-wrap">
+          <div class="user-avatar">
+            <a href="#1">
+              <div class="avatar-img-wrap">
+                <img src="images/elements/default-avatar.jpg" />
+              </div>
+              <p>用户名字</p>
+            </a>
+          </div>
+
+          <div class="user-comment">
+            <span class="comment-arrow"><img src="images/elements/comment-arrow.png" /></span>
+            <div class="user-vote-wrap">
+              <img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><span class="data">2013-05-14</span>
+            </div>
+            <p>还行吧，送货速度还不错，货品也还可以。</p>
+            <div class="flower-egg">
+              <a href="#flower"><img src="images/elements/flower.png" alt="鲜花" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[13]</span></a>
+              <a href="#egg"><img src="images/elements/egg.png" alt="鸡蛋" /><span class="tiny-arrow"><img src="images/elements/tiny-left-arrow.png" /></span><span class="vote-number">[2]</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="pagination-wrap">
+          <ul>
+            <li class="pre-page-item"><a href="#1">上页</a></li>
+            <li><a href="#1">1</a></li>
+            <li><a href="#1">2</a></li>
+            <li><a href="#1">3</a></li>
+            <li><a href="#1">4</a></li>
+            <li><a href="#1">5</a></li>
+            <li><a href="#1">6</a></li>
+            <li><a href="#1">7</a></li>
+            <li>...</li>
+            <li><a href="#1">45</a></li>
+            <li><a href="#1">下页</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+    </div><!--End - Main Page Content Here-->
+
+    <!--div id="add-shopping-cart-pop" title="添加成功！" class="dialog-popup shopping-cart-popup">
+      <div class="btn-wrap"><a href="shopping-cart.html" id="open-shopping-cart-btn" class="open-shopping-cart-btn">查看购物车</a><a href="#close" class="close-link" role="button" aria-disabled="false" title="close">关闭窗口</a></div>
+      <span class="cutline"></span>
+      <span class="small-title">你可能会感兴趣的其他商品：</span>
+      <ul class="suggest-product-list">
+        <li><a href="#1"><div><img src="images/examples/goods-image-big.jpg" alt="product image" /><p>丹麦Danisa皇冠丹麦曲奇饼干</p><span>￥39.00</span></div></a></li>
+        <li><a href="#1"><div><img src="images/examples/goods-image-big.jpg" alt="product image" /><p>丹麦Danisa皇冠丹麦曲奇饼干</p><span>￥39.00</span></div></a></li>
+        <li><a href="#1"><div><img src="images/examples/goods-image-big.jpg" alt="product image" /><p>丹麦Danisa皇冠丹麦曲奇饼干</p><span>￥39.00</span></div></a></li>
+        <li><a href="#1"><div><img src="images/examples/goods-image-big.jpg" alt="product image" /><p>丹麦Danisa皇冠丹麦曲奇饼干</p><span>￥39.00</span></div></a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div-->
+
+    <div class="delivery-phone-call-wrap">
+      <div class="delivery-phone-call-line">
+        <span>配送电话： </span> 130-0000-0000
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!--Footer Content Here-->
+    <footer>
+      <div class="footer">
+        <div class="footer-content-wrap">
+          <div class="list-wrap">
+            <h3>新手入门</h3>
+            <ul>
+              <li><a href="#1">购物流程</a></li>
+              <li><a href="#1">积分说明</a></li>
+              <li><a href="#1">发票制度</a></li>
+              <li><a href="#1">服务承诺</a></li>
+              <li><a href="#1">服务协议</a></li>
+              <li><a href="#1">手机服务端</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3>配送方式</h3>
+            <ul>
+              <li><a href="#1">配送范围及时间</a></li>
+              <li><a href="#1">商品验货与签收</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3>售后服务</h3>
+            <ul>
+              <li><a href="#1">退换货原则</a></li>
+              <li><a href="#1">退款说明</a></li>
+            </ul>
+          </div>
+          <div class="list-wrap">
+            <h3>帮助信息</h3>
+            <ul>
+              <li><a href="#1">帮助信息</a></li>
+              <li><a href="#1">常见问题</a></li>
+              <li><a href="#1">找回密码</a></li>
+              <li><a href="#1">联系客服</a></li>
+              <li><a href="#1">手机访问</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      
+      <ul class="page-bottom-links">
+        <li><a href="#1">关于我们</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">联系我们</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">人才招聘</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">友情链接</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">商家入驻</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">广告服务</a></li>
+        <li>&#124;</li>
+        <li><a href="#1">媒体报道</a></li>
+      </ul>
+
+      <p class="copy-info">&copy; Copyright Information 2013</p>
+
+    </footer><!--End - Footer Content Here-->
+
+    <!--Javascript is here-->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript">
+      $(window).load(function(){
+        $(window).scroll(function(){
+          var elementsTop = $('.supermarket-info').offset().top;
+          var scroH = $(this).scrollTop();
+          if (scroH > elementsTop) {
+            $('.delivery-phone-call-wrap').fadeIn('slow');
+          } else {
+            $('.delivery-phone-call-wrap').fadeOut('slow');
+          }
+        });
+
+        $('.goods-image-wrap').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+        });
+
+        $( "#add-shopping-cart-pop" ).dialog({
+          autoOpen: false,
+          width: 380,
+          height: 280,
+          modal: true
+        });
+
+        $('.close-link').click(function(){
+          $("#add-shopping-cart-pop").dialog( "close" );
+        });
+
+        $("#shopping-cart-btn").click(function() {
+          $("#add-shopping-cart-pop").dialog( "open" );
+        });
+      });
+    </script>
+  </body>
+</html>

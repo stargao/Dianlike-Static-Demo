@@ -1,0 +1,373 @@
+@import url('common.less');
+
+.goods-showcase-wrap {
+    margin-top: 20px;
+
+    .goods-image-wrap {
+        float: left;
+        width: 350px;
+        height: 350px;
+        border: 1px solid @gray-border;
+        border-radius: 0;
+        box-shadow: none;
+
+        img {
+            width: 275px;
+            height: 275px;
+            margin: -10px auto 0;
+        }
+
+        ol.flex-control-thumbs {
+            margin-top: 7px;
+            margin-left: 8px;
+
+            li {
+                width: 75px;
+                height: 75px;
+                margin-left: 10px;
+                border: 1px solid @gray-border;
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                    margin-top: 3px;
+                }
+            }
+
+            li:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .goods-desc-wrap {
+        margin-left: 380px;
+
+        h1.goods-title {
+            font-size: 18px;
+            color: @blue-color;
+            line-height: 36px;
+            border-bottom: 1px solid @gray-border;
+        }
+
+        .price-delivery-wrap {
+            font-size: 12px;
+
+            p {
+                padding: 8px 0;
+
+                span {
+                    padding-left: 5px;
+                }
+            }
+
+            p.price span {
+                font-size: 18px;
+                font-weight: bold;
+                color: #ff0000;
+            }
+
+            p.preferential span {
+                color: #ff0000;
+            }
+
+            p.delivery span {
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        .supermarket-info {
+            border: 1px solid @gray-border;
+            background: white;
+            float: right;
+            padding: 10px;
+            position: relative;
+            margin-top: -100px;
+            min-width: 280px;
+            
+            .supermarker-logo {
+                height: 75px;
+                width: auto;
+            }
+
+            p {
+                padding-bottom: 5px;
+                font-size: 12px;
+
+                span {
+                    font-weight: bold;
+
+                    img {
+                        margin-bottom: -2px;
+                        margin-right: 2px;
+                    }
+
+                    a {
+                        color: @font-color;
+                        text-decoration: none;
+                        font-weight: normal;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            p.supermarket-name {
+                span {
+                    padding: 2px 0;
+
+                    a {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            p.delivery-number {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.buy-wrap {
+    margin-left: 380px;
+    margin-top: 85px;
+    border: 1px solid @gray-border;
+    background: @gray-color;
+    padding: 5px 10px 20px;
+    overflow: hidden;
+
+    .buy-number-wrap {
+        height: 49px;
+    }
+
+    label {
+        float: left;
+        padding-top: 5px;
+    }
+
+    a.change-number-btn {
+        float: left;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        margin-left: 10px;
+        border: 1px solid @gray-border;
+        background: white;
+        text-align: center;
+        text-decoration: none;
+        color: @font-color;
+        margin-top: 5px;
+    }
+
+    #input-number-box {
+        float: left;
+        width: 40px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: 1px solid @gray-border;
+        padding: 0px 10px;
+        margin: 0 8px;
+    }
+
+    .buy-btn-wrap {
+        width: 100%;
+
+        .add-shopping-cart-btn {
+            .blue-button-style(180px, 42px, 16px);
+            line-height: 42px;
+            text-decoration: none;
+            padding-left: 20px;
+            font-weight: bold;
+            background: url(../images/elements/shopping-cart-icon.png) 30px center no-repeat @blue-color;
+            display: block;
+            float: left;
+        }
+
+        .add-favorite-btn {
+            .blue-border-button-style(95px, 42px, 14px);
+            padding-left: 15px;
+            line-height: 42px;
+            margin-left: 15px;
+            background: url(../images/elements/add-favorite-icon.png) 8px center no-repeat @light-blue-color;
+            min-width: 120px;
+            display: block;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .added-btn {
+            .blue-border-button-style(95px, 42px, 14px);
+            padding-left: 15px;
+            line-height: 42px;
+            margin-left: 15px;
+            border: 2px solid #b5d6eb;
+            color: @gray-font;
+            cursor: default;
+            background: url(../images/elements/added-icon.png) 8px center no-repeat @light-blue-color;
+            min-width: 120px;
+            display: block;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+.goods-desc-content-wrap {
+    margin-left: 175px;
+
+    .goods-desc-title {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+        background: url(../images/elements/cutline.png) right bottom no-repeat;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+
+    img {
+        float: right;
+        margin-left: 80px;
+    }
+}
+
+span.return-shop-home {
+    position: absolute;
+    z-index: 99;
+    margin-left: 520px;
+    margin-top: -28px;
+    padding: 5px 10px 0;
+    background: white;
+    border: 1px solid white;
+
+    a {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        ul.shop-page-categroy {
+            display: block;
+        }
+    }
+
+    ul.shop-page-categroy {
+        display: none;
+        list-style: none;
+        background: white;
+        text-align: center;
+        border: 1px solid @blue-color;
+        padding: 3px 0;
+        width: 100px;
+        margin-top: 3px;
+        margin-left: -25px;
+
+        li {
+            padding: 3px 0;
+            font-size: 12px;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/*Popup style*/
+.open-shopping-cart-btn {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 30px;
+    .blue-button-style(120px, 30px, 12px);
+    margin: 20px 0 20px 40px;
+    float: left;
+}
+
+.shopping-cart-popup {
+    display: none;
+
+    .btn-wrap {
+        display: block;
+        height: 60px;
+    }
+
+    .close-link {
+        margin: 20px;
+        line-height: 30px;
+        float: left;
+    }
+
+    .cutline {
+        border-top: 1px solid @gray-border;
+        height: 1px;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .small-title {
+        font-size: 12px;
+        color: @gray-font;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .suggest-product-list {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            float: left;
+            width: 75px;
+            height: 75px;
+            margin-right: 12px;
+
+            a {
+                text-decoration: none;
+            }
+
+            div {
+                img {
+                    width: 75px;
+                    height: 75px;
+                    border: 1px solid @gray-color;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                span {
+                    color: @price-red;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+//Webkit Browser Hack
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .supermarket-info {
+        margin-top: -90px!important;
+    }
+}

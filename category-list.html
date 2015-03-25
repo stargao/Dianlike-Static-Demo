@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>商品分类列表页面</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Star Gao">
+
+  <!--jQuery UI style-->
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.3.custom.min.css">
+
+  <!--Custom Styles-->
+  <link rel="stylesheet/less" type="text/css" href="css/category-list.less">
+</head>
+<body class="page-content-wrap">
+  <!--Top Banner Here-->
+  <div class="top-banner-wrap">
+    <div class="top-banner">
+      <div class="collection-site"><a href="#1">收藏网站</a></div>
+      <div class="user-control-line">
+        <ul class="inline">
+          <li><p>您好，欢迎来到店里客！</p></li>
+          <li><a href="#1">[登陆]</a></li>
+          <li><a href="#1">[免费注册]</a></li>
+          <li class="cutline"><p>&#124;</p></li>
+          <li><a href="user-center.html">客户服务</a></li>
+          <li class="cutline"><p>&#124;</p></li>
+          <li><a href="#1">网站导航</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--End - Top Banner Here-->
+
+  <!--Logo and Search Here-->
+  <div class="search-bar">
+    <div class="logo">
+      <a href="index.html" target="_self"><img src="images/elements/dianlike-logo.png" alt="店里客 LOGO"></a>
+    </div>
+    <div class="search-bar">
+      <form class="form-search" id="form-search">
+        <input type="text" class="search-query" id="search-input" />
+        <button type="submit" class="btn" id="search-button">搜&nbsp;&nbsp;索</button>
+      </form>
+    </div>
+    <div class="clearfix"></div>
+  </div><!--End - Logo and Search Here-->
+
+  <!--Location Bar Here-->
+  <div class="location-bar-wrap">
+    <div class="location-bar">
+      <p class="location-info">您需要配送的小区是：<span>国嘉华庭</span><a href="#change-location" class="change-location-btn">更改配送地址</a></p>
+    </div>
+    <div class="input-location-bar">
+      <p class="location-info"><label for="input-location-bar">请输入您需要配送的小区/写字楼：</label><input type="text" placeholder="请输入您所在的楼盘或者街道名称" /><button type="submit" class="btn" id="confirm-location-button">确&nbsp;&nbsp;定</button><span class="notes">我们将根据您的配送位置筛选超市和商品信息</span></p>
+    </div>
+  </div><!--End - Location Bar Here-->
+
+  <!--Main Page Content Here-->
+  <div class="main-page-wrap">
+    <div class="goods-info-wrap">
+      <h1 class="category-title">食品饮料 &gt;<span class="breadcrumb"><a href="product-category.html">进口食品</a>&nbsp;&gt;&nbsp;<a href="category-list.html">饼干蛋糕</a></span></h1>
+    </div>
+
+    <div class="left-menu-wrap">
+      <div class="left-list-menu product-category-menu" id="category-list-menu">
+        <h3>进口食品</h3>
+        <div>
+          <ul>
+            <li><a href="category-list.html">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>地方特产</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>休闲食品</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>粮油调味</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>中外名酒</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>饮料冲调</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>营养健康</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+        <h3>生鲜食品</h3>
+        <div>
+          <ul>
+            <li><a href="#1">饼干蛋糕</a></li>
+            <li><a href="#1">糖果巧克力</a></li>
+            <li><a href="#1">休闲零食</a></li>
+            <li><a href="#1">冲调饮品</a></li>
+            <li><a href="#1">粮油调味</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="left-list-menu" id="recommend--to-you">
+        <h3>向您推荐</h3>
+        <ul>
+          <li>
+            <a href="#1">
+              <img src="images/examples/goods-image-small.jpg" />
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+          <li>
+            <a href="#1">
+              <img src="images/examples/goods-image-small.jpg" />
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+          <li>
+            <a href="#1">
+              <img src="images/examples/goods-image-small.jpg" />
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="left-list-menu top-list" id="this-week-top">
+        <h3>本周销量排行</h3>
+        <ol>
+          <li>
+            <span>1</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+          <li>
+            <span>2</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+          <li>
+            <span>3</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+            <p class="price">￥89.00</p>
+          </li>
+          <li>
+            <span>4</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+          </li>
+          <li>
+            <span>5</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+          </li>
+          <li>
+            <span>6</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+          </li>
+          <li>
+            <span>7</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+          </li>
+          <li>
+            <span>8</span>
+            <a href="#1">
+              <p class="goods-name">丹麦Danisa皇冠丹麦曲奇饼干</p>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="right-content-wrap">
+      <div class="search-filter-wrap">
+        <h3>饼干蛋糕 - 商品筛选</h3>
+        <!-- <div class="filter-item-wrap">
+          <h4>类别：</h4>
+          <ul>
+            <li class="select-all"><a href="#1">不限</a></li>
+            <li><a href="#1">曲奇</a></li>
+            <li><a href="#1">威化</a></li>
+            <li><a href="#1">派</a></li>
+            <li><a href="#1">糕点</a></li>
+            <li><a href="#1">蛋卷</a></li>
+            <li><a href="#1">松塔</a></li>
+            <li><a href="#1">谷物饼干</a></li>
+            <li><a href="#1">低糖饼干</a></li>
+            <li><a href="#1">有机饼干</a></li>
+            <li><a href="#1">苏打饼干</a></li>
+            <li><a href="#1">夹心饼干</a></li>
+            <li><a href="#1">麻薯</a></li>
+            <li><a href="#1">黑糖饼干</a></li>
+            <li><a href="#1">其他</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div> -->
+        
+        <!-- <div class="filter-item-wrap">
+          <h4>产地：</h4>
+          <ul>
+            <li class="select-all"><a href="#1">不限</a></li>
+            <li><a href="#1">丹麦</a></li>
+            <li><a href="#1">美国</a></li>
+            <li><a href="#1">比利时</a></li>
+            <li><a href="#1">印尼</a></li>
+            <li><a href="#1">马来西亚</a></li>
+            <li><a href="#1">菲律宾</a></li>
+            <li><a href="#1">瑞士</a></li>
+            <li><a href="#1">西班牙</a></li>
+            <li><a href="#1">意大利</a></li>
+            <li><a href="#1">奥利地</a></li>
+            <li><a href="#1">中国台湾</a></li>
+            <li><a href="#1">澳门</a></li>
+            <li><a href="#1">韩国</a></li>
+            <li><a href="#1">新西兰</a></li>
+            <li><a href="#1">以色列</a></li>
+            <li><a href="#1">泰国</a></li>
+            <li><a href="#1">英国</a></li>
+            <li><a href="#1">法国</a></li>
+            <li><a href="#1">德国</a></li>
+            <li><a href="#1">新加坡</a></li>
+            <li><a href="#1">其他</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div> -->
+
+        <div class="filter-item-wrap">
+          <h4>价格：</h4>
+          <ul>
+            <li class="select-all"><a href="#1">不限</a></li>
+            <li><a href="#1">0-19元</a></li>
+            <li><a href="#1">20-49元</a></li>
+            <li><a href="#1">50-99元</a></li>
+            <li><a href="#1">100-159元</a></li>
+            <li><a href="#1">160-199元</a></li>
+            <li><a href="#1">200以上</a></li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>    
+      </div>
+
+      <div class="goods-list-wrap">
+        <h3>排序：<span class="sort-wrap"><button type="button" class="active">刷新时间 &and;</button><button type="button">价格 &or;</button><button type="button">配送时间 &or;</button><button type="button">店铺评分 &or;</button></span><span class="goods-count-wrap">共<span>2841</span>件商品&nbsp;&#124;&nbsp;&nbsp;1/68&nbsp;&nbsp;<button type="button" class="unactive">&lt;&nbsp;上一页</button><button type="button">下一页&nbsp;&gt;</button></span></h3>
+
+        <ul class="goods-list">
+          <li class="each-line-first-item">
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn added-btn">已收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li class="each-line-first-item">
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li class="each-line-first-item">
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn added-btn">已收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn added-btn">已收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="delivery-tag">配送</span><p>10分钟 <span>配送</span></p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li class="each-line-first-item">
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn added-btn">已收藏</button>
+          </li>
+          <li class="each-line-first-item">
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+          <li>
+            <a href="goods-details.html">
+              <img src="images/examples/goods-image-big.jpg" alt="Goods Image" />
+              <p>Kjeldsens丹麦蓝罐曲奇908g</p>
+            </a>
+            <p class="price">￥108.00</p>
+            <div class="shop-info">
+              <a href="shop-page-home.html" class="shop-page-link">红旗连锁<span>一江城花分场</span></a>
+              <div><span class="pickup-tag">自取</span><p>满100元送5元优惠券</p></div>
+              <div class="clearfix"></div>
+              <p><span>超市评分：</span><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /><img src="images/elements/vote-star.png" /></p>
+            </div>
+            <a href="#shopping-cart.html" class="add-to-shopping-cart-btn">加入购物车</a><button type="button" class="collection-btn">加入收藏</button>
+          </li>
+        </ul>
+        <div class="pagination-wrap">
+          <ul>
+            <li class="pre-page-item"><a href="#1">上页</a></li>
+            <li><a href="#1">1</a></li>
+            <li><a href="#1">2</a></li>
+            <li><a href="#1">3</a></li>
+            <li><a href="#1">4</a></li>
+            <li><a href="#1">5</a></li>
+            <li><a href="#1">6</a></li>
+            <li><a href="#1">7</a></li>
+            <li>...</li>
+            <li><a href="#1">45</a></li>
+            <li><a href="#1">下页</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div><!--End - Main Page Content Here-->
+  <div class="shopping-cart-wrap">
+    <p>您已经添加了 <span>0</span> 件商品</p>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <!--Footer Content Here-->
+  <footer>
+    <div class="footer">
+      <div class="footer-content-wrap">
+        <div class="list-wrap">
+          <h3>新手入门</h3>
+          <ul>
+            <li><a href="#1">购物流程</a></li>
+            <li><a href="#1">积分说明</a></li>
+            <li><a href="#1">发票制度</a></li>
+            <li><a href="#1">服务承诺</a></li>
+            <li><a href="#1">服务协议</a></li>
+            <li><a href="#1">手机服务端</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3>配送方式</h3>
+          <ul>
+            <li><a href="#1">配送范围及时间</a></li>
+            <li><a href="#1">商品验货与签收</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3>售后服务</h3>
+          <ul>
+            <li><a href="#1">退换货原则</a></li>
+            <li><a href="#1">退款说明</a></li>
+          </ul>
+        </div>
+        <div class="list-wrap">
+          <h3>帮助信息</h3>
+          <ul>
+            <li><a href="#1">帮助信息</a></li>
+            <li><a href="#1">常见问题</a></li>
+            <li><a href="#1">找回密码</a></li>
+            <li><a href="#1">联系客服</a></li>
+            <li><a href="#1">手机访问</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <ul class="page-bottom-links">
+      <li><a href="#1">关于我们</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">联系我们</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">人才招聘</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">友情链接</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">商家入驻</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">广告服务</a></li>
+      <li>&#124;</li>
+      <li><a href="#1">媒体报道</a></li>
+    </ul>
+
+    <p class="copy-info">&copy; Copyright Information 2013</p>
+
+  </footer><!--End - Footer Content Here-->
+
+  <!--Javascript is here-->
+  <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="js/less.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

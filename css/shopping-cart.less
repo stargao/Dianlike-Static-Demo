@@ -1,0 +1,399 @@
+@import url('common.less');
+
+.category-title span {
+	color: @blue-color;
+	margin-left: 5px;
+	font-weight: normal;
+}
+
+.shopping-cart-info {
+	padding: 5px 0;
+
+	.checkall-btn {
+		margin-right: 3px;
+	}
+
+	.checkall-btn {
+		margin-left: 5px;
+	}
+
+	.delivery-info {
+		.light-blue-box-style;
+		border-top: 1px solid @blue-color;
+		border-bottom: none;
+		height: 36px;
+		line-height: 36px;
+		margin-top: 5px;
+
+		p {
+			float: left;
+			font-size: 14px;
+			font-weight: bold;
+			margin-left: 5px;
+			margin-right: 50px;
+
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.goods-info-table {
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		td {
+			border-top: 1px solid @gray-border;
+			border-bottom: 1px solid @gray-border;
+			background: @gray-color;
+			padding: 10px 5px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		td.goods-info {
+			width: 260px;
+
+			img {
+				float: left;
+				margin-right: 8px;
+			}
+
+			p {
+				margin-top: 5px;
+				text-align: left;
+				font-size: 14px;
+			}
+		}
+
+		td.buy-number {
+			width: 140px;
+
+			a.change-number-btn {
+				background: none repeat scroll 0 0 white;
+				border: 1px solid @gray-border;
+				color: @font-color;
+				float: left;
+				height: 16px;
+				line-height: 16px;
+				margin-top: 5px;
+				text-align: center;
+				text-decoration: none;
+				width: 16px;
+			}
+
+			#input-number-box {
+				border: 1px solid @gray-border;
+				float: left;
+				height: 25px;
+				line-height: 25px;
+				margin: 0 8px;
+				padding: 0 10px;
+				text-align: center;
+				width: 40px;
+			}
+		}
+
+		td.price {
+			font-weight: bold;
+			color: #ff0000;
+		}
+	}
+
+	.total-price-line {
+		float: right;
+		margin-right: 15px;
+		margin-bottom: 20px;
+
+		p {
+			font-size: 14px;
+
+			span.goods-num {
+				font-weight: bold;
+				font-size: 14px;
+			}
+
+			span.total-price {
+				font-size: 18px;
+				color: #ff0000;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.confirm-goods-info-line {
+	.light-blue-box-style;
+	border-top: 1px solid @blue-color;
+	border-bottom: 1px solid @blue-color;
+	padding: 10px 0;
+	margin: 10px 0;
+
+	.empty-btn {
+		.blue-button-style(120px, 30px, 14px);
+		float: left;
+	}
+
+	.total-price-line {
+		float: right;
+		margin-right: 15px;
+		line-height: 24px;
+
+		p {
+			font-size: 14px;
+			float: right;
+
+			span.goods-num {
+				font-weight: bold;
+				font-size: 14px;
+			}
+
+			span.total-price {
+				font-size: 24px;
+				color: #ff0000;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.return-shopping {
+	margin-top: 30px;
+	float: left;
+	display: block;
+}
+
+.submit-order {
+	.blue-button-style(175px, 45px, 16px);
+	line-height: 45px;
+	text-decoration: none;
+	font-weight: bold;
+	float: right;
+	margin-top: 15px;
+}
+
+//Check Order Page style
+.order-info-line {
+	padding-bottom: 20px;
+
+	.title-wrap {
+		height: 35px;
+		line-height: 35px;
+		background: @light-blue-color;
+		border-top: 1px solid @blue-color;
+		padding-left: 10px;
+		margin-top: -1px;
+
+		h2 {
+			font-size: 14px;
+			display: inline;
+		}
+
+		a {
+			margin-left: 20px;
+		}
+	}
+}
+
+.address-info-line {
+	clear: both;
+	margin: 20px 0;
+	min-height: 40px;
+
+	label {
+		float: left;
+		min-width: 160px;
+		text-align: right;
+		line-height: 20px;
+	}
+
+	p {
+		float: left;
+		margin-left: 10px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	input {
+		min-width: 340px;
+		height: 28px;
+		line-height: 28px;
+		border: 1px solid @blue-color;
+		margin-left: 10px;
+		float: left;
+		padding: 0 10px;
+		font-size: 14px;
+	}
+
+	button {
+		float: left;
+		.blue-button-style(60px, 30px, 12px);
+		height: 30px;
+		line-height: 26px;
+		margin-left: 8px;
+	}
+
+	input.hidden, button.hidden {
+		display: none;
+	}
+}
+
+.products-info {
+	border-bottom: 1px dotted @blue-color;
+
+	.delivery-info {
+		border-bottom: none;
+		height: 36px;
+		line-height: 36px;
+		margin-top: 5px;
+
+		p {
+			float: left;
+			font-size: 14px;
+			font-weight: bold;
+			margin-left: 5px;
+			margin-right: 50px;
+
+			span {
+				font-size: 14px;
+				font-weight: normal;
+			}
+		}
+
+		span.need-cash-wrap {
+			float: right;
+
+			input {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.goods-info-table {
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		th {
+			background: @gray-border;
+			padding: 5px 0;
+			font-weight: normal;
+		}
+
+		td {
+			border-top: 1px solid @gray-border;
+			border-bottom: 1px solid @gray-border;
+			background: @gray-color;
+			padding: 10px 5px;
+			text-align: center;
+			font-size: 14px;
+		}
+
+		td.goods-info {
+			width: 280px;
+			padding-left: 20px;
+
+			img {
+				float: left;
+				margin-right: 8px;
+			}
+
+			p {
+				margin-top: 5px;
+				text-align: left;
+				font-size: 14px;
+			}
+		}
+
+		td.buy-number {
+			width: 140px;
+
+			a.change-number-btn {
+				background: none repeat scroll 0 0 white;
+				border: 1px solid #EEEEEE;
+				color: #444444;
+				float: left;
+				height: 16px;
+				line-height: 16px;
+				margin-top: 5px;
+				text-align: center;
+				text-decoration: none;
+				width: 16px;
+			}
+
+			#input-number-box {
+				border: 1px solid #EEEEEE;
+				float: left;
+				height: 25px;
+				line-height: 25px;
+				margin: 0 8px;
+				padding: 0 10px;
+				text-align: center;
+				width: 40px;
+			}
+		}
+
+		td.price {
+			font-weight: bold;
+			color: #ff0000;
+		}
+	}
+
+	.submit-order-wrap {
+		float: right;
+		margin-right: 20px;
+
+		p {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 30px;
+			float: left;
+			margin-right: 30px;
+
+			span {
+				color: #ff0000;
+				font-size: 18px;
+			}
+		}
+
+		button {
+			.blue-button-style(120px, 35px, 14px);
+			padding: 3px 12px;
+			float: right;
+		}
+	}
+}
+
+.submit-all-order-wrap {
+	float: right;
+	min-width: 450px;
+	margin-top: 30px;
+	padding: 10px 20px;
+	background: @light-blue-color;
+
+	p {
+		text-align: right;
+		margin-bottom: 8px;
+
+		span {
+			font-weight: bold;
+			font-size: 14px;
+		}
+	}
+
+	p.total-price {
+		font-size: 20px;
+
+		span {
+			font-size: 24px;
+			color: #ff0000;
+		}
+	}
+}
+
+#submit-all-order-btn {
+	.blue-button-style(175px, 45px, 18px);
+	float: right;
+	font-weight: bold;
+	margin-top: 30px;
+}
